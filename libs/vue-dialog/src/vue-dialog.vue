@@ -27,7 +27,7 @@ const visibleStyle = computed(() => {
 
 <style lang="scss" scoped>
 .vue-dialog {
-  @apply flex absolute w-full;
+  @apply flex flex-col items-center justify-center absolute w-full;
   background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
 }

@@ -8,7 +8,12 @@ const show = ref(false);
   <div class="card">
     <h1>example dialog</h1>
     <button @click="show = true">click to show</button>
-    <vue-dialog v-model="show" />
+    <vue-dialog v-model="show">
+      <div class="!w-[400px] card">
+        <h1>hello dialog!</h1>
+        <button @click="show = false">click to close</button>
+      </div>
+    </vue-dialog>
   </div>
 </template>
 
