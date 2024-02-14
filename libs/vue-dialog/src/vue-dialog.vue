@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onBeforeMount, onMounted, ref } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 
 defineOptions({
   name: 'vue-dialog'
