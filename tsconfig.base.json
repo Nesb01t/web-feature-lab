@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "vue-dialog": ["libs/vue-dialog/src/index.ts"],
+      "vue-func-dialog": ["libs/vue-func-dialog/src/index.ts"],
       "vue-mouse-tracker": ["libs/vue-mouse-tracker/src/index.ts"],
       "vue-promise": ["libs/vue-promise/src/index.ts"]
     }

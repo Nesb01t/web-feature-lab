@@ -1,0 +1,8 @@
+{
+  "name": "vue-func-dialog",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/vue-func-dialog/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}
