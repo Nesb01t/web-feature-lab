@@ -1,0 +1,8 @@
+{
+  "name": "vue-mouse-tracker",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/vue-mouse-tracker/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}

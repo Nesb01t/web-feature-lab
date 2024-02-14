@@ -23,7 +23,7 @@ const getData = async () => {
 </script>
 
 <template>
-  <div class="shadow-2xl rounded-lg p-4">
+  <div class="card">
     <h1>example promise</h1>
     <promise :promise="getData">
       <template #loading>

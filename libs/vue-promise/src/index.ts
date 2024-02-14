@@ -1,0 +1,1 @@
+export * as promise from './promise.vue';

@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "vue-mouse-tracker": ["libs/vue-mouse-tracker/src/index.ts"],
       "vue-promise": ["libs/vue-promise/src/index.ts"]
     }
   },

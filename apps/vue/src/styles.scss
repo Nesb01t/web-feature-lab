@@ -9,3 +9,11 @@ html, body {
   color: #333;
   height: 100vh;
 }
+
+.card {
+  @apply shadow-2xl rounded-lg p-4 w-[300px] m-4 bg-indigo-50;
+
+  h1 {
+    @apply text-xl font-bold;
+  }
+}
