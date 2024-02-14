@@ -1,0 +1,1 @@
+export * as vueDialog from './vue-dialog.vue';
