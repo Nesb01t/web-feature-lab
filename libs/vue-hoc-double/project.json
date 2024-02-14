@@ -1,0 +1,8 @@
+{
+  "name": "vue-hoc-double",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/vue-hoc-double/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}
