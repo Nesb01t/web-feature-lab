@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import NxWelcome from './NxWelcome.vue';
+import ExamplePromise from '../example/example-promise.vue';
 </script>
 
 <template>
-  <NxWelcome title="vue" />
+  <ExamplePromise />
 </template>

@@ -1,14 +1,30 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-import { type PromiseStatus } from '../type';
+import { onMounted, ref } from 'vue';
+import { PromiseStatus } from '../type';
 
 defineOptions({
   name: 'Promise'
 });
 
-const props = defineProps<{}>();
+const props = defineProps<{
+  promise: () => Promise<any>;
+  [key: string]: any;
+}>();
 
-const status = ref<PromiseStatus>();
+const status = ref<PromiseStatus>(PromiseStatus.PENDING);
+const refresh = () => {
+  status.value = PromiseStatus.PENDING;
+  props.promise().then(
+    () => {
+      status.value = PromiseStatus.FULFILLED;
+    }
+  ).catch(
+    () => {
+      status.value = PromiseStatus.REJECTED;
+    }
+  );
+};
+onMounted(refresh);
 </script>
 
 <template>
@@ -19,7 +35,7 @@ const status = ref<PromiseStatus>();
     <slot name="success" />
   </template>
   <template v-else-if="status == PromiseStatus.REJECTED">
-    <slot name="error" />
+    <slot name="error" :refresh="refresh" />
   </template>
 </template>
 
