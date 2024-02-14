@@ -11,19 +11,16 @@ export interface UseDialogOptions {
 
 export const useDialog = (options?: UseDialogOptions) => {
 
-  const close = () => {
-    /**
-     * 跟踪 VNode -> null
-     */
-    options?.onClose?.();
-    render(null, document.body);
+  const open = async () => {
+    return new Promise((resolve) => {
+      render(h(OptionsDialog, {
+        close: () => {
+          render(null, document.body);
+          resolve(options?.onClose?.());
+        }
+      }), document.body);
+    });
   };
 
-  const open = () => {
-    render(h(OptionsDialog, {
-      close
-    }), document.body);
-  };
-
-  return { open, close, confirm };
+  return { open };
 };
