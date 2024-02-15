@@ -2,6 +2,7 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
+import typescript from '@rollup/plugin-typescript';
 
 export default defineConfig({
   root: __dirname,
@@ -9,15 +10,15 @@ export default defineConfig({
 
   server: {
     port: 4200,
-    host: 'localhost',
+    host: 'localhost'
   },
 
   preview: {
     port: 4300,
-    host: 'localhost',
+    host: 'localhost'
   },
 
-  plugins: [vue(), nxViteTsPaths()],
+  plugins: [vue(), nxViteTsPaths(), typescript()],
 
   // Uncomment this if you are using workers.
   // worker: {
@@ -28,7 +29,7 @@ export default defineConfig({
     outDir: '../../dist/vue',
     reportCompressedSize: true,
     commonjsOptions: {
-      transformMixedEsModules: true,
-    },
-  },
+      transformMixedEsModules: true
+    }
+  }
 });

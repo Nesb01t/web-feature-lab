@@ -1,1 +1,1 @@
-export * as promise from './promise.vue';
+export { default as promise } from './promise.vue';

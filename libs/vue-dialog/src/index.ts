@@ -1,1 +1,1 @@
-export * as vueDialog from './vue-dialog.vue';
+export { default as vueDialog } from './vue-dialog.vue';

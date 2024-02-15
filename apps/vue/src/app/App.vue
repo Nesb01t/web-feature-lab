@@ -4,7 +4,7 @@ import ExampleMouse from '../example/example-mouse.vue';
 import ExampleDialog from '../example/example-dialog.vue';
 import ExampleFuncDialog from '../example/example-func-dialog.vue';
 import ExampleHocDouble from '../example/example-hoc-double.vue';
-import { withDouble } from '../../../../libs/vue-hoc-double/src/hoc';
+import { withDouble } from 'vue-hoc-double';
 
 const double = withDouble(ExampleHocDouble);
 </script>

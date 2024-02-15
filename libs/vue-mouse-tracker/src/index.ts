@@ -1,1 +1,1 @@
-export * as mouseTracker from './mouse-tracker.vue';
+export { default as mouseTracker } from './mouse-tracker.vue';

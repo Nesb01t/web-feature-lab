@@ -1,9 +1,9 @@
 import { h, render } from 'vue';
 import OptionsDialog from './options-dialog.vue';
 
-export type FuncDialogType = 'alert' | 'confirm' | 'prompt' | 'options';
+type FuncDialogType = 'alert' | 'confirm' | 'prompt' | 'options';
 
-export interface UseDialogOptions {
+interface UseDialogOptions {
   type?: FuncDialogType;
   onConfirm?: () => any;
   onClose?: () => any;
