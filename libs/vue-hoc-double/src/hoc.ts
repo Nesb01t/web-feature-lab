@@ -1,4 +1,4 @@
-import { type Component, h, type VNode } from 'vue';
+import { type Component, h } from 'vue';
 
 export const withDouble = (com: Component): Component => {
   const geneNode = (props: object) => {

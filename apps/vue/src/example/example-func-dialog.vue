@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useDialog } from '../../../../libs/vue-func-dialog/src/use-dialog';
+import { useDialog } from 'vue-func-dialog';
 
 const { open } = useDialog({
   onConfirm: () => console.log('confirmed'),

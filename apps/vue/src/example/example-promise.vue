@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import promise from '../../../../libs/vue-promise/src/promise.vue';
+import { promise } from 'vue-promise';
 
 const getData = async () => {
   // create request body

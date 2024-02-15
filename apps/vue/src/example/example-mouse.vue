@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MouseTracker from '../../../../libs/vue-mouse-tracker/src/mouse-tracker.vue';
+import { mouseTracker } from 'vue-mouse-tracker';
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import VueDialog from '../../../../libs/vue-dialog/src/vue-dialog.vue';
+import { vueDialog } from 'vue-dialog';
 import { ref } from 'vue';
 
 const show = ref(false);
