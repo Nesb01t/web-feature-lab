@@ -10,7 +10,6 @@ interface UseDialogOptions {
 }
 
 export const useDialog = (options?: UseDialogOptions) => {
-
   const open = async () => {
     return new Promise((resolve) => {
       render(h(OptionsDialog, {

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { promise } from 'vue-promise';
 
-const getData = async () => {
+const getData = () => {
   // create request body
   const req = {
     method: 'GET',
@@ -9,15 +9,11 @@ const getData = async () => {
   };
 
   // mock a error request
-  const res = await new Promise((_, reject) => {
+  return new Promise((_, reject) => {
     setTimeout(() => {
       reject(req.data + ' I am resolved!');
     }, 1000);
   });
-  console.log(res);
-
-  // return response
-  return res;
 };
 
 </script>
