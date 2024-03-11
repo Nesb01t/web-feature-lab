@@ -1,0 +1,7 @@
+{
+  "name": "vue-use-router",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/vue-use-router/src",
+  "targets": {}
+}
