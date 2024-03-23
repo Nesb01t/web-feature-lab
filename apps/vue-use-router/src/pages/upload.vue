@@ -3,6 +3,6 @@
 
 <template>
   <main>
-    123123
+    上传...
   </main>
 </template>
